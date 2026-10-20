@@ -1,0 +1,42 @@
+JAPEXZ7 — SITE DE PERFIL
+========================
+
+ARQUIVOS
+- index.html: estrutura do site
+- style.css: visual, cores, animações e responsividade
+- script.js: tela de entrada, música, partículas, cursor e contador
+- assets/: coloque aqui o vídeo e a música que você tem permissão para usar
+
+ANTES DE PUBLICAR
+1. Para usar um vídeo de fundo, coloque um arquivo MP4 chamado `fundo.mp4` dentro de `assets`.
+   Caminho final: assets/fundo.mp4
+   Se você não adicionar o vídeo, o fundo azul/preto em gradiente continua funcionando.
+2. Para usar música, coloque um arquivo MP3 chamado `musica.mp3` dentro de `assets`.
+   Caminho final: assets/musica.mp3
+   Use uma música que você tenha direito de publicar. O áudio começa só depois de um clique.
+3. Abra index.html e troque os links de Instagram, Discord e TikTok pelos seus links reais.
+4. Você pode editar a bio em index.html. Procure `just a little corner of the internet.`
+
+COMO TESTAR NO COMPUTADOR
+- Extraia o ZIP.
+- Abra a pasta e dê dois cliques em index.html.
+- Para testar vídeo e áudio, confira se os arquivos estão nos caminhos acima.
+
+COMO PUBLICAR NO GITHUB PAGES
+1. Entre em https://github.com e crie um repositório público, por exemplo `japexz7`.
+2. Dentro do repositório, clique em Add file > Upload files.
+3. Envie index.html, style.css, script.js e a pasta assets (com seus arquivos, se já os adicionou).
+   Não envie o ZIP como único arquivo: o GitHub Pages precisa dos arquivos extraídos.
+4. Clique em Commit changes.
+5. Abra Settings > Pages.
+6. Em Build and deployment, selecione Deploy from a branch.
+7. Escolha Branch: main e Folder: / (root), depois clique em Save.
+8. Aguarde alguns minutos e atualize a página. O endereço costuma ser:
+   https://SEU-USUARIO.github.io/japexz7/
+   Substitua SEU-USUARIO pelo seu nome de usuário do GitHub.
+
+OBSERVAÇÕES
+- O contador incluído conta visitas neste navegador usando localStorage. Não é um contador global compartilhado entre todos os visitantes.
+- A música e o vídeo não estão incluídos no ZIP; adicione seus próprios arquivos em assets.
+- Se o vídeo for muito grande, a página pode demorar a carregar. Prefira MP4 comprimido e curto.
+- O site usa uma fonte do Google Fonts; se a fonte externa não carregar, ele usa fontes alternativas.

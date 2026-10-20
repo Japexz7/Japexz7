@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#050914">
+  <meta name="description" content="Perfil pessoal de Japexz7.">
+  <title>Japexz7 | Profile</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Coloque seu vídeo em assets/fundo.mp4 e sua música em assets/musica.mp3 -->
+  <video class="background-video" id="backgroundVideo" autoplay muted loop playsinline poster="assets/fundo-poster.jpg">
+    <source src="assets/fundo.mp4" type="video/mp4">
+  </video>
+  <div class="background-fallback" aria-hidden="true"></div>
+  <div class="shade" aria-hidden="true"></div>
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <main class="page">
+    <button class="enter-screen" id="enterScreen" type="button" aria-label="Clique para entrar no perfil">
+      <span class="enter-mark">J<span>7</span></span>
+      <span class="enter-title">JAPEXZ7</span>
+      <span class="enter-subtitle">CLIQUE PARA ENTRAR</span>
+      <span class="enter-line"><span></span></span>
+      <span class="enter-hint">HEADPHONES RECOMMENDED</span>
+    </button>
+
+    <section class="profile-card" id="profileCard" aria-label="Perfil Japexz7" hidden>
+      <div class="status"><span class="status-dot"></span> ONLINE <span class="status-separator">/</span> PROFILE</div>
+      <div class="avatar-wrap">
+        <div class="avatar-ring"></div>
+        <div class="avatar" aria-label="Avatar com as letras J7">J<span>7</span></div>
+      </div>
+      <p class="eyebrow">WELCOME TO MY SPACE</p>
+      <h1 class="nickname">Japexz7<span class="cursor">_</span></h1>
+      <p class="typing-line"><span id="typingText"></span><span class="typing-caret">|</span></p>
+      <p class="bio">just a little corner of the internet.</p>
+
+      <nav class="social-links" aria-label="Redes sociais">
+        <!-- Troque os links abaixo pelos seus endereços reais -->
+        <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <span class="social-icon">◎</span><span>Instagram</span><span class="external">↗</span>
+        </a>
+        <a href="https://discord.com/app" target="_blank" rel="noopener noreferrer" aria-label="Discord">
+          <span class="social-icon discord-icon">◉</span><span>Discord</span><span class="external">↗</span>
+        </a>
+        <a href="https://tiktok.com/" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+          <span class="social-icon">♪</span><span>TikTok</span><span class="external">↗</span>
+        </a>
+      </nav>
+
+      <div class="music-panel">
+        <button class="music-button" id="musicButton" type="button" aria-label="Tocar música">
+          <span id="musicIcon">▶</span>
+        </button>
+        <div class="track-info">
+          <span class="track-label">NOW PLAYING</span>
+          <strong id="trackName">sometimes</strong>
+          <span class="track-state" id="trackState">clique para tocar</span>
+        </div>
+        <div class="equalizer" id="equalizer" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+      </div>
+      <audio id="music" preload="none" loop>
+        <source src="assets/musica.mp3" type="audio/mpeg">
+      </audio>
+
+      <div class="card-footer">
+        <span><span class="footer-dot"></span> PERSONAL PAGE</span>
+        <span class="visits">VISITAS NESTE NAVEGADOR <b id="visitCount">001</b></span>
+      </div>
+    </section>
+
+    <footer class="page-footer" id="pageFooter" hidden>DESIGNED BY JAPEXZ7 <span>•</span> EST. 2026</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
